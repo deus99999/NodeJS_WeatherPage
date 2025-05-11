@@ -18,6 +18,7 @@ let server = http.createServer(function(req, res) {
       case '/':
        return res.end(indexHtmlFile)
       case '/style.css':
+        res.writeHead(200, { 'Content-Type': 'text/css' });
         return res.end(cssFile)
       case '/script.js':
        return res.end(scriptFile)
