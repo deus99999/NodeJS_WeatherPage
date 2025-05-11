@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Прогноз погоди</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Прогноз погоди</h1>
+    <select id="citySelect">
+      <option value="Kyiv">Київ</option>
+      <option value="Lviv">Львів</option>
+      <option value="Kharkiv">Харків</option> 
+      <option value="Izmail">Ізмаїл</option>
+    </select>
+    <input type="text" id="searchInput" placeholder="Введіть місто...">
+    <button onclick="getWeather()">Пошук</button>
+
+    <div id="weather" class="weather-box"></div>
+    <div id="forecast"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
