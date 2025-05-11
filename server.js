@@ -37,7 +37,7 @@ let server = http.createServer(function(req, res) {
   return res.end('Error 404')
 })
 
-server.listen(3000)
+server.listen(process.env.PORT || 3000)
 
 function getWeather(req, res) {
   let body = '';
